@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3d3d57;
+}
+
+.outermost-box{
+    height: 93vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 96vw;
+    border-radius: 40px;
+    padding: 20px;
+    /* box-shadow:#A8A7A7; */
+  }
+  
+  .top-box{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  .login-register{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-box h1{
+    background-color: white;
+    font-family: Sacramento;
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  
+  .login-register{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-register li{
+    font-size: 17px;
+    font-weight: 600;
+    background-color: white;
+    list-style-type: none;
+    margin-right: 40px;
+  }
+  
+  .login-register button{
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(225, 224, 224);
+    border-radius: 30px;
+    padding: 8px 18px;
+    margin-right: 20px;
+    border: none;
+  }
+  
+  .horizontal-bar{
+    height: 7px;
+    background-color: #A8A7A7; 
+    border-radius: 20px;
+  }
+  
+  .main-box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  .main-box p{
+    background-color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 4.5vh;
+    margin-left: 2.5vw;
+  }
+
+  .books-collection{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .book{
+    background-color: white;
+    display: flex;
+    height: 22vh;
+    width: 25vh;
+    margin: 0 2.5vw;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 4px 4px 5px rgb(137, 137, 137);
+    transition: 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  /* .book:hover{
+    height: 25vh;
+    width: 28vh;
+    cursor: pointer;
+  } */
+  
+  .book:nth-child(odd) {
+    background-color: rgb(80, 80, 80);
+    color: white;
+  }
+  
+  .book:nth-child(even) {
+    background-color: white;
+    color: black;
+  }
+
+  /* App.css EXTRA CSS FROM CHATGPT */ 
+
+  .books-collection {
+    
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space items evenly */
+    margin: 0 20px; /* Adjust as needed for spacing */
+    max-height: 425px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    /* border: 1px solid #ccc; Optional: border around the collection */
+    padding: 10px; /* Optional: padding inside the collection */
+  }
+  
+  .book {
+    flex: 0 0 calc(25% - 20px); /* 4 boxes per row with spacing */
+    margin: 10px; /* Space between boxes */
+    padding: 20px; /* Padding inside each box */
+    border: 1px solid #ccc; /* Optional: border around each box */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .book:hover {
+    background-color: #979595; /* Optional: hover effect */
+  }
+
+  /* App.css */
+.back-button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+  
